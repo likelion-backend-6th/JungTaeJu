@@ -41,6 +41,8 @@ INSTALLED_APPS = [
 
 INSTALLED_APPS += [
     'sns',
+    "rest_framework",
+    "drf_spectacular",
 ]
 
 MIDDLEWARE = [
@@ -103,7 +105,20 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
+REST_FRAMEWORK = {
+    # 'DEFAULT_RENDERER_CLASSES': [
+    #     'rest_framework.renderers.JSONRenderer',
+    #     # 필요한 다른 렌더러들...
+    # ],
+    # "DEFAULT_SCHEMA_CLASS": "drf_spectacular.openapi.AutoSchema",
+}
 
+# SPECTACULAR_SETTINGS = {
+#     "TITLE": "LikeLion Forum API",
+#     "DESCRIPTION": "LikeLion 6th",
+#     "VERSION": "0.0.1",
+#     "SERVE_INCLUDE_SCHEMA": False,
+# }
 # Internationalization
 # https://docs.djangoproject.com/en/4.2/topics/i18n/
 
