@@ -1,1 +1,3 @@
 # JungTaeJu
+
+/api/user/
